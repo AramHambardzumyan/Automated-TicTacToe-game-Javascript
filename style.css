@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+        background-image: url('./image/backg.jpg');
+    }
+    #game_area{
+        display: flex;
+        margin: 10px;
+    }
+    .boxes {
+        border: 3px dotted white;
+        width: 15vw;
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .player{
+        font-size: 80px;
+    }
+    #display {
+        margin: 15px 0px;
+        width: 45vw;
+        height: 10vh;
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+    button {
+        width: 45vw;
+    }
+    .image-x{
+        width: 100px;
+    }
+    .image-o {
+        width: 100px;
+    }
+    .tictactoe {
+        width: 100px;
+    }
+    #restart-button {
+        width: 10%;
+        padding: 10px;
+        border-radius:  15px;
+        border: none;
+        background-color: #25A8FF;
+        color: white;
+    }
+    #restart-button:hover {
+        background-color: #1974EB;
+    }
+    
+    @media only screen and (max-width: 1024px) {
+        .boxes {
+            width:20vw;
+            height: 25vh;
+        }
+        .image-o {
+            width: 80px;
+        }
+        .image-x {
+            width: 80px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .boxes {
+            width:25vw;
+            height: 25vh;
+        }
+        .image-o {
+            width: 70px;
+        }
+        .image-x {
+            width: 70px;
+        }
+        .tictactoe {
+            width: 70px;
+        }
+        #restart-button {
+            width: 20%;
+        }
+      }
+      @media only screen and (max-width: 480px) {
+        .boxes {
+            width:25vw;
+            height: 15vh;
+        }
+        .image-o {
+            width: 60px;
+        }
+        .image-x {
+            width: 60px;
+        }
+        .tictactoe {
+            width: 60px;
+        }
+        #restart-button {
+            width: 20%;
+        }
+      }
